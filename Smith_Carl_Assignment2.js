@@ -6,10 +6,12 @@ Javascript flowchart program
 
 
 //Variables
-var dead = "Jingo has lost all HP and died, congratulations on your victory!" //String Variable
+var dead = "Jingo has 0 HP left and has died." //String Variable
 	int = 13 //Number Variable
 	str = 10 //Number Variable
-	maxdamage = int + str //Maximum damage that can be dealt in a single attack
+	congrats = "Congratulations on your victory!"
+	
+
 //prompt
 
 var name = prompt("What is your name, Hero?", "")
@@ -53,3 +55,9 @@ while (prepandattacktime > 0){
 	prepandattacktime--
 }
 console.log("You have finished preparing and are now ready for the attack!")
+
+//Number Function
+var maxdamage = int + str //Maximum damage that can be dealt in a single attack
+
+for (var enemyhp = 150; enemyhp > 0; enemyhp -= maxdamage) {console.log("You raise your "+PrimaryWeapon+" and smash it into Jingo!  Jingo has "+enemyhp+" remaining!") };
+console.log(dead)
